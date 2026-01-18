@@ -1,3 +1,13 @@
+## v2.1.0
+
+* Rebrand as Still Angry (fork of AngryEra, which was a fork of Angry Assignments)
+* Updated for TBC Anniversary
+* Fixed LibDropDownMenu loading by moving from .toc to embeds.xml
+* Fixed GuildRoster() API compatibility for TBC Anniversary - now uses C_GuildInfo.GuildRoster() with fallback to global GuildRoster()
+* Updated bindings.xml to use stillAngry prefix matching folder name
+* Updated .toc filename from AngryEra.toc to stillAngry.toc
+* Updated .pkgmeta package name from StillEra to StillAngry
+
 ## v2.0.10
 
 * Added Manage button to bulk delete pages and categories. Maybe LJ will be nicer?

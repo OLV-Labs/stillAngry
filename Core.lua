@@ -3141,7 +3141,13 @@ function AngryAssign:OnEnable()
     self:RegisterEvent("GUILD_ROSTER_UPDATE")
 
     if isClassic then
-        GuildRoster()
+        if C_GuildInfo and C_GuildInfo.GuildRoster then
+            C_GuildInfo.GuildRoster()
+        else
+            -- Fallback for versions where the global still exists or to suppress errors
+            local rosterFunc = GuildRoster or (C_GuildInfo and C_GuildInfo.GuildRoster)
+            if rosterFunc then rosterFunc() end
+        end
     end
 
     LSM.RegisterCallback(self, "LibSharedMedia_Registered", "UpdateMedia")
@@ -3193,7 +3199,13 @@ function AngryAssign:GUILD_ROSTER_UPDATE(...)
     local canRequestRosterUpdate = ...
     self:ResetOfficerRank()
     if canRequestRosterUpdate and isClassic then
-        GuildRoster()
+        if C_GuildInfo and C_GuildInfo.GuildRoster then
+            C_GuildInfo.GuildRoster()
+        else
+            -- Fallback for versions where the global still exists or to suppress errors
+            local rosterFunc = GuildRoster or (C_GuildInfo and C_GuildInfo.GuildRoster)
+            if rosterFunc then rosterFunc() end
+        end
     end
 end
 

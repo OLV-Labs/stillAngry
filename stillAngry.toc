@@ -1,6 +1,6 @@
-## Interface: 11508
-## Title: Angry Era
-## Author: Mikinho
+## Interface: 20505
+## Title: Still Angry
+## Author: OLV Labs
 ## X-Original-Author: Ermad
 ## Version: @project-version@
 ## X-Timestamp: @project-date-integer@
@@ -8,7 +8,5 @@
 ## OptionalDeps: Ace3, AceGUI-3.0-SharedMediaWidgets, LibCompress, LibWindow-1.1
 
 embeds.xml
-
-Libs\LibDropDownMenu\LibDropDownMenu.xml
 
 Core.lua

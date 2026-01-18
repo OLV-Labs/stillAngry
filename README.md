@@ -1,3 +1,7 @@
+**Still Angry** is a fork of **Angry Era**, which is a fork of **Angry Assignments (AA)**. This fork is specifically maintained for TBC Anniversary.
+
+---
+
 This addon was written by the guild Angry (US-Illidan) to handle assignments during raids.  It provides a convenient way to store and share assignments for different bosses, allowing editing by multiple people (officers/raid assistants), and displaying the information to raiders in a configurable and readable format.
 
 Using AA as a raider

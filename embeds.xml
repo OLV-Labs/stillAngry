@@ -13,5 +13,6 @@
   <Include file="libs\AceGUI-3.0-SharedMediaWidgets\widget.xml"/>
   <Include file="libs\LibCompress\lib.xml"/>
   <Script file="libs\LibWindow-1.1\LibWindow-1.1\LibWindow-1.1.lua"/>
+  <Include file="libs\LibDropDownMenu\LibDropDownMenu.xml"/>
   <Script file="AngryTreeGroup.lua"/>
 </Ui>
